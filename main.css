@@ -19,20 +19,68 @@ body
 {
     text-align: center;
 }
+#wrapperClass
+{
+    border: 1px solid black;
+    width: 1000px;
+    margin: 20px auto;
+    text-align: left;
+}
+#head
+{
+    background: yellow;
+    border: 1px solid black;
+    padding: 20px;
+}
+#nav
+{
+    background: blue;
+    color: white;
+}
+#nav li
+{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font: bold 14px;
+    font-style: tahoma;
+}
+#main
+{
+    float: left;
+    width: 660px;
+    margin: 30px; /* 720px taken, 280 left*/
+}
 
+#aside
+{
+    float: left;
+    width: 220px;
+    margin: 20px 0;
+    padding: 30px;
+    background: red;
+}
+#footer
+{
+    clear: both;
+    text-align: center;
+    border-top: 1px solid green;
+    padding: 20px;
+}
 
+#art
+{
+    border: 1px solid red;
+    background: purple;
+    color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+#art footer
+{
+    text-align: right;
+}
 
 
 
