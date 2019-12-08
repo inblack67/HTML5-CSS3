@@ -1,0 +1,76 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+h1
+{
+    font: bold 20px Tahoma;
+}
+h2
+{
+    font: bold 14px Tahoma;
+}
+header,section,footer,aside,nav,article,hgroup
+{
+    display: block;
+}
+body
+{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .copy1
+{
+    color: blue;
+}
+.copy2
+{
+    color: blueviolet;
+}
+.finalCopyRight
+{
+    color: red;
+}
+h1[name*="title"]
+{
+    color: brown;
+}
+p:nth-child(even)
+{
+    color: chocolate;
+}
+
+:not(.sally)
+{
+    color: blue;
+}
+div[name="mommie"]>p
+{   
+    color: black;
+}
+p.bucky ~ p
+{
+    color: red;
+} */
