@@ -17,108 +17,62 @@ header,section,footer,aside,nav,article,hgroup
 }
 body
 {
-    text-align: center;
+    width: 100%;    
+    display: -webkit-box;
+    -webkit-box-pack: center;
 }
 #wrapperClass
 {
-    border: 1px solid black;
-    width: 1000px;
-    margin: 20px auto;
-    text-align: left;
+    max-width: 1000px;
+    margin: 20px 0px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
 }
+
 #head
 {
     background: yellow;
-    border: 1px solid black;
+    border: 3px solid black;
     padding: 20px;
 }
 #nav
 {
+    border: red;
     background: blue;
     color: white;
 }
 #nav li
 {
     display: inline-block;
-    list-style: none;
+    list-style-type: none;
     padding: 5px;
-    font: bold 14px;
-    font-style: tahoma;
+    font: bold 14px tahoma;
+}
+
+#newDiv
+{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
 }
 #main
 {
-    float: left;
-    width: 660px;
-    margin: 30px; /* 720px taken, 280 left*/
+    border: 1px solid blue;
+    -webkit-box-flex: 1;
+    margin: 20px;
+    padding: 20px;
 }
-
 #aside
 {
-    float: left;
+    border: 1px solid red;
     width: 220px;
-    margin: 20px 0;
+    margin: 20px 0px;
     padding: 30px;
-    background: red;
+    background: green;
 }
 #footer
 {
-    clear: both;
     text-align: center;
-    border-top: 1px solid green;
     padding: 20px;
+    border-top: 1px solid violet;
 }
-
-#art
-{
-    border: 1px solid red;
-    background: purple;
-    color: white;
-    padding: 20px;
-    margin-bottom: 15px;
-}
-
-#art footer
-{
-    text-align: right;
-}
-
-
-
-
-
-
-
-
-/* .copy1
-{
-    color: blue;
-}
-.copy2
-{
-    color: blueviolet;
-}
-.finalCopyRight
-{
-    color: red;
-}
-h1[name*="title"]
-{
-    color: brown;
-}
-p:nth-child(even)
-{
-    color: chocolate;
-}
-
-:not(.sally)
-{
-    color: blue;
-}
-div[name="mommie"]>p
-{   
-    color: black;
-}
-p.bucky ~ p
-{
-    color: red;
-} */
