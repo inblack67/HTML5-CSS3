@@ -7,10 +7,10 @@ body
 {
     display:block; 
     margin: 150px auto;
-    color: ;
+    color: red;
     -webkit-border-radius:10px;
     opacity: 0.6;
-    background: red;
+    background: green;
     width: 120px;
     height: 75px;
     -webkit-transition: -webkit-transform 2s, opacity 2s,background 2s, width 2s, height 2s;
