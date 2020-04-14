@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floats</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: medium;
+        }
+        .box{
+            background: grey;
+            width: 80%;
+            margin: auto;
+            margin-top: 2rem;
+            line-height: 1.6rem;
+            border: solid 1px white;
+        }
+
+        .box p, h4{
+            text-align: justify;
+            padding: 1rem;
+        }
+
+        .btn{
+            padding: 1rem;
+            text-decoration: none;
+            color: #f4f4f4;
+            background: #333;
+        }
+
+        .btn:hover{
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        nav {
+            background: black;
+            padding: 1rem;
+            overflow: auto;
+        }
+
+        .nav-menu li{
+            float: left;
+        }
+
+        .nav-menu a{
+            text-decoration: none;
+            color: #f4f4f4;
+            padding: 1rem;
+            margin: auto;
+        }
+
+        .nav-menu a:hover{
+            color: red;
+            /* background: grey; */
+        }
+
+        .container{
+            margin: 2rem;
+            color: white;
+        }
+
+        #inline li{
+            display: inline;
+            padding: 1rem;
+        }
+
+        img{
+            display: block;
+            margin: auto;
+            padding: 1rem;
+            width: 50%;
+            height: 50%;
+        }
+
+
+    </style>
+  </head>
+  <body>
+
+      <nav>
+          <ul class="nav-menu">
+              <li><a href="#!">Home</a></li>
+              <li><a href="#!">Contact</a></li>
+              <li><a href="#!">About</a></li>
+          </ul>
+      </nav>
+
+      <div class="container">
+          <ul id="inline">
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+              <li>Item 4</li>
+          </ul>
+      </div>
+
+      <br><br>
+      <img src="https://source.unsplash.com/random?forest" alt="no-photo">
+      <img src="https://source.unsplash.com/random?nature" alt="no-photo">
+      <br><br>
+
+      <div class="box">
+          <h4>Lorem, ipsum.</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus suscipit rem consequuntur. Maxime nemo eius, labore in sapiente doloribus ducimus ipsam commodi cupiditate recusandae mollitia porro consectetur provident blanditiis esse!</p>
+          <a class="btn" href="#!">Read More</a>
+      </div>
+      <div class="box">
+        <h4>Lorem, ipsum.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus suscipit rem consequuntur. Maxime nemo eius, labore in sapiente doloribus ducimus ipsam commodi cupiditate recusandae mollitia porro consectetur provident blanditiis esse!</p>
+        <a class="btn" href="#!">Read More</a>
+    </div>
+    <div class="box">
+        <h4>Lorem, ipsum.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus suscipit rem consequuntur. Maxime nemo eius, labore in sapiente doloribus ducimus ipsam commodi cupiditate recusandae mollitia porro consectetur provident blanditiis esse!</p>
+        <a class="btn" href="#!">Read More</a>
+    </div>
+  </body>
+</html>
