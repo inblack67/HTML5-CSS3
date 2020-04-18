@@ -1,0 +1,31 @@
+body{
+    width: 100wh;
+}
+
+#navbar{
+    flex-direction: column;
+}
+
+#navbar .logo{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#navbar ul{
+    justify-content: center;
+}
+
+
+
+#who .who-img{
+    display: none;
+}
+
+#what .items {
+    display: block;
+}
+
+
+#showcase .showcase-content{
+    top: 90px;
+}

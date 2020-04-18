@@ -18,12 +18,35 @@ p{
     padding: 0.8rem 0;
 }
 
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
 .text-primary{
     color: #93cb52;
 }
 
+.text-center{
+    text-align: center;
+}
+
 .l-heading{
     font-size: 4rem;
+}
+
+.m-heading{
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 0.75rem;
+}
+
+.s-heading{
+    font-size: 1.5rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
 }
 
 .lead{
@@ -48,6 +71,19 @@ p{
     background: #333;
     color: white;
 }
+
+.bg-dark{
+    background: #333;
+    color: white;
+}
+
+.py-1{ padding: 1.5rem 0; }
+.py-2{ padding: 2rem 0; }
+.py-3{ padding: 3rem 0; }
+
+.p-1{ padding: 1.5rem; }
+.p-2{ padding: 2rem; }
+.p-3{ padding: 3rem; }
 
 #navbar{
     background: #333;
@@ -99,4 +135,48 @@ p{
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+#what .items{
+    display: flex;
+    padding: 1rem;
+}
+
+#what .items .item{
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
+}
+
+#what .items .item i{
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+#who{
+    display: flex;
+}
+
+#who div{
+    /* equal sides */
+    flex: 1;
+}
+
+#who .who-img{
+    background: url(../img/people.jpg) center center/cover no-repeat;
+}
+
+#who .who-content{
+    text-align: justify;
+}
+
+#clients .items{
+    display: flex;
+}
+
+#clients .items img{
+    flex: 1;
+    margin: auto;
+    width: 60%;
 }
