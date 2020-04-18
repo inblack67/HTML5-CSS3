@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex | Aligns</title>
+
+    <style>
+        .container{
+            display: flex;
+            background: #333;
+            flex-wrap: wrap;
+            /* justify-content: flex-start; DEFAULT  */
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            justify-content: space-around;
+            justify-content: space-between; /* Not at the edges */
+            justify-content: space-evenly;
+            /* justify-content: center; */
+
+
+
+            /* ALIGN ITEMS Container must have a height */ 
+            height: 600px;
+            align-items: stretch; /* DEFAULT */
+            align-items: flex-start; /* Up */
+            align-items: flex-end; /* Bottom */
+            align-items: center; 
+            align-items: baseline; 
+
+            /* Align Items Vertical where there is extra space */
+            /* Content */
+            /* align-content: center;
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: baseline;
+            align-content: space-between; */
+            /* align-content: space-around; */
+
+        }
+        .item{
+            padding: 1rem;
+            text-align: center;
+            background: #f4f4f4;
+            border: 1px solid grey;
+            margin: 0.7rem;
+            /* width: 300px; */
+            flex-basis: 200px;
+        }
+
+        .item-1{
+            order: 3;
+        }
+
+        .item-2{
+            align-self: flex-end !important;
+            order: 2;
+        }
+
+        .item-3{
+            order: 1;
+        }
+
+    </style>
+  </head>
+  <body>
+      <div class="container">
+          <div class="item item-1"><h1>Item 1</h1></div>
+          <div class="item item-2"><h1>Item 2</h1></div>
+          <div class="item item-3"><h1>Item 3</h1></div>
+          <!-- <div class="item item-3"><h1>Item 3</h1></div>
+          <div class="item item-3"><h1>Item 3</h1></div>
+          <div class="item item-3"><h1>Item 3</h1></div>
+          <div class="item item-3"><h1>Item 3</h1></div>
+          <div class="item item-3"><h1>Item 3</h1></div>
+          <div class="item item-3"><h1>Item 3</h1></div>
+          <div class="item item-3"><h1>Item 3</h1></div> -->
+      </div>
+  </body>
+</html>
