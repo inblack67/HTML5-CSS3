@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions | On Events</title>
+
+    <style>
+        body{
+            background: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            background: white;
+            /* transition-property: background;
+            transition-duration: 2s;
+            transition-delay: 3s;
+            transition-timing-function: ease-in-out; */
+            /* transition: background, border-radius ease-in-out 2s; */
+            transition: ease-in-out 2s all;
+        }
+
+        .box:hover{
+            background: red;
+            border-radius: 50%;
+            width: 50%;
+            height: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
