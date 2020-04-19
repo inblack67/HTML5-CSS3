@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before | After</title>
+
+    <style>
+
+        .is-required:after{
+            content: '*';
+            padding: 0.2rem;
+            color: red;
+        }
+
+        /* Overlay */
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: #333333;
+            color: white;
+        }
+
+        .l-heading{
+            font-size: 4rem;
+            padding: 1rem;
+            margin: 1rem;
+        }
+
+        .lead{
+            font-size: 1.4rem;
+            line-height: 1.4;
+            padding: 1rem;
+            margin: 1rem;
+        }
+
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+        }
+        
+        header:before{
+            content: '';
+            background: url(https://source.unsplash.com/random/1600x900) no-repeat center center/cover;
+            opacity: 0.3;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- <label class="is-required">Name</label>
+    <input type="text"> -->
+
+    <header>
+        <h1 class="l-heading">
+            Hello Hells
+        </h1>
+        <p class="lead">Lorem ipsum dolor sit amet.</p>
+    </header>
+
+
+</body>
+</html>
