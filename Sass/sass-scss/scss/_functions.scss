@@ -1,0 +1,12 @@
+@function set-text-color($bg-color){
+    @if(lightness($bg-color) > 50){
+        @return #333;
+    }
+    @else{
+        @return #f4f4f4;
+    }
+}
+
+@mixin transform($prop){
+    transform: $prop;
+}

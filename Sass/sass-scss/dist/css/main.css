@@ -1,0 +1,37 @@
+body {
+  background: #f4f4f4; }
+
+header {
+  background: #333;
+  color: #f4f4f4;
+  text-align: center; }
+
+.section {
+  padding: 1rem;
+  margin: 1rem;
+  line-height: 1.4; }
+  .section h3 {
+    text-align: center; }
+  .section-a {
+    background: blue; }
+  .section-b {
+    background: skyblue; }
+
+.btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px; }
+
+.btn-light:hover, .btn-dark:hover {
+  transform: rotate(20deg); }
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333; }
+
+.btn-dark {
+  background: #333;
+  color: #f4f4f4; }
