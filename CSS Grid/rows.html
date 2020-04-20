@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rows | Grid CSS</title>
+
+    <style>
+        .item{
+            background: #f4f4f4;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+            padding: 3rem;
+        }
+
+        .grid{
+            display: grid;
+            /* first 3 */
+            grid-template-rows: 1fr 2fr 3fr;
+            /* for res */
+            grid-auto-rows: 3fr;
+
+            grid-template-columns: repeat(2, 2fr);
+
+            grid-gap: 1rem;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="grid">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+</body>
+</html>

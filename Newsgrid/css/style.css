@@ -1,0 +1,237 @@
+:root{
+    --primary-color: maroon;
+    --secondary-color: orange;
+    --light-color: #f4f4f4;
+    --dark-color: #333;
+    --max-width: 1100px;
+}
+
+.category{
+    --sports-color: orange;
+    --ent-color: purple;
+    --tech-color: blue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    background-color: var(--light-color);
+
+}
+
+a{
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    /* to stop strechting them out of their container */
+    width: 100%;
+}
+
+.container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 2rem;
+    /* show that it always show the content within */
+    overflow: hidden;
+}
+
+.l-heading{
+    font-size: 4rem;
+    margin: 1rem;
+    line-height: 1.4;
+}
+
+.m-heading{
+    font-size: 2.5rem;
+    line-height: 1.4;
+    margin: 1rem;
+}
+
+.s-heading{
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin: 1rem;
+}
+
+.lead{
+    font-size: 1.2rem;
+    margin: 1rem;
+    line-height: 1.4;
+}
+
+.btn{
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+}
+
+.category{
+    display: inline-block;
+    color: var(--light-color);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.category-sports { background: var(--sports-color); }
+.category-ent { background: var(--ent-color); }
+.category-tech { background: var(--tech-color); }
+
+.card{
+    background: white;
+    padding: 2rem;
+}
+
+.bg-dark{
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+
+.bg-primary{
+    background: var(--primary-color);
+    color: var(--light-color);
+}
+
+.bg-secondary{
+    background: var(--secondary-color);
+    color: var(--light-color);
+}
+
+.py-1{ padding: 1.5rem 0; }
+.py-2{ padding: 2rem 0; }
+.py-3{ padding: 3rem 0; }
+
+#main-nav{
+    background: var(--light-color);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#main-nav .container{
+    display: grid;
+    grid-template-columns: 6fr 3fr 2fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+#main-nav .logo{
+    width: 200px;
+}
+
+#main-nav ul{
+    display: flex;
+    justify-self: end;
+}
+
+#main-nav ul li a{
+    padding: 0.75rem;
+}
+
+#main-nav ul li a.current{
+    background: var(--primary-color);
+    border-radius: 5px;
+    color: white;
+}
+
+#main-nav ul li a:hover, .btn:hover{
+    background: var(--light-color);
+    color: var(--dark-color);
+    transition: 1s ease-in-out;
+}
+
+#main-nav .social {
+    align-self: center;
+}
+
+#main-nav .social i {
+    color: grey;
+    margin-right: 0.5rem;
+}
+
+#main-nav .social i:hover{
+    color: var(--primary-color);
+    transition: 1s ease-in-out;
+}
+
+#showcase{
+    background: var(--dark-color);
+    color: var(--light-color);
+    position: relative;
+    padding: 2rem;
+}
+
+#showcase:before{
+    content: '';
+    background: url('../img/featured.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+#showcase .showcase-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#showcase .showcase-content{
+    z-index: 1;
+}
+
+#home-articles .articles-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    grid-column: 1 / span 2;
+}
+
+#home-articles .articles-container > *:last-child{
+    /* filling the gap */
+    grid-column: 2 / span 2;
+}
+
+#footer .footer-container{
+    text-align: center;
+}
+
+#section-about .about-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-about .about-container img{
+    border-radius: 5px;
+}

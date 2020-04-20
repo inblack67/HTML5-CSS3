@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Areas</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'content content sidebar'
+            'box-1 box-2 box-3'
+            'footer footer footer';
+            grid-gap: 1rem;
+            text-align: center;
+        }
+        .header{
+            grid-area: header;
+        }
+        .content{
+            grid-area: content;
+        }
+        .aside{
+            grid-area: sidebar;
+        }
+
+        .box-1{
+            grid-area: box-1;
+        }
+        .box-2{
+            grid-area: box-2;
+        }
+        .box-3{
+            grid-area: box-3;
+        }
+        .footer{
+            grid-area: footer;
+        }
+
+        .header, .content, .sidebar, .footer, .box-1, .box-2, .box-3{
+            border: 1px solid black;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><h1>My Website</h1></header>
+        <section class="content">
+            <h3>Welcome to my webstie</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, laboriosam pariatur animi distinctio quo quaerat ab perferendis veritatis rerum? Est ipsa facere incidunt modi, possimus itaque unde dolor voluptatem earum assumenda beatae dolores adipisci optio, ut quam cumque laudantium qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, laborum!</p>
+        </section>
+        <aside class="sidebar">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+        </aside>
+        <div class="box-1">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tempora vero odio, cumque eum reprehenderit officia officiis dolore praesentium aperiam ipsam aspernatur delectus explicabo accusantium natus non rem quisquam libero consectetur. Ipsum excepturi nobis soluta dignissimos architecto odio molestiae dolores!</p>
+        </div>
+        <div class="box-2">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tempora vero odio, cumque eum reprehenderit officia officiis dolore praesentium aperiam ipsam aspernatur delectus explicabo accusantium natus non rem quisquam libero consectetur. Ipsum excepturi nobis soluta dignissimos architecto odio molestiae dolores!</p>
+        </div>
+        <div class="box-3">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque tempora vero odio, cumque eum reprehenderit officia officiis dolore praesentium aperiam ipsam aspernatur delectus explicabo accusantium natus non rem quisquam libero consectetur. Ipsum excepturi nobis soluta dignissimos architecto odio molestiae dolores!</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Copyright &copy; 2020 All Rights Reserved</p>
+    </footer>
+</body>
+</html>
