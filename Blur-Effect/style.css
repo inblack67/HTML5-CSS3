@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    line-height: 1.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ccc;
+    z-index: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+.l-heading{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.lead{
+    font-size: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: black;
+    color: #ccc;
+}
+
+#showcase{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    transition: all 2s;
+}
+
+#showcase:after{
+    transition: all 2s;
+    content: '';
+    background: url(./rain.jpg) no-repeat center center/cover;
+    filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#showcase:hover:after{
+    transition: all 2s;
+    content: '';
+    filter: blur(0px);
+}
+
+#showcase:hover .content {
+    content: '';
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+#showcase .content:hover {
+    content: '';
+    filter: blur(0px);
+    transition: all 1s;
+}
