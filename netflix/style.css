@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    min-height: 100vh;
+    background: black;
+    overflow-x: hidden;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    border: 10px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 1rem 2rem;
+}
+
+.red-text{
+    color: red;
+}
+
+.btn-primary{
+    background: red;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    transition: background 1s ease-in-out;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+
+.btn-primary-lg{
+    background: red;
+    padding: 1.2rem 2rem;
+    border-radius: 6px;
+    transition: background 1s ease-in-out;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+
+.btn-effect:hover{
+    background: #B03A2E;
+}
+
+.l-heading{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.m-heading{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.subheading{
+    font-size: 1.2rem;
+}
+
+
+.lead{
+    font-size: 1.5rem;
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+#header{
+    height: 100vh;
+    width: 100%;
+    background: url('./img/background.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+#header:after{
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    box-shadow: inset 50px 100px 250px black, inset -50px -100px 250px black;
+} 
+
+#header-2{
+    height: 100vh;
+    width: 100%;
+    background: url('./img/netflix-logo-2.jpg') center center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+
+#header #navbar .container a{
+    z-index: 2;
+}
+
+#header #navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header #navbar .container .logo{
+    z-index: 2;
+    margin-top: 1rem;
+    width: 10rem;
+}
+
+#header #header-content{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+#header #header-content form{
+    margin: 1rem;
+}
+
+#header #header-content form .input-field{
+    display: flex;
+}
+
+#header #header-content form input{
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    width: 30rem;
+    height: 4rem;
+}
+
+#header #header-content form input::placeholder{
+
+    font-size: 1.5rem;
+}
+
+#grid-1 .container,
+#grid-2 .container,
+#grid-3 .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 2rem;
+}
+
+@media(max-width: 768px){
+
+    #grid-1 .container,
+    #grid-2 .container,
+    #grid-3 .container{
+        grid-template-columns: 1fr;
+    }
+
+    #header #header-content form .input-field{
+        flex-direction: column;
+    }
+
+    #header #header-content{
+        margin: 1rem;
+        text-align: center;
+    }
+
+    #header #header-content .l-heading{
+        font-size: 2rem;
+    }
+
+    #header #header-content .subheading{
+        font-size: 1rem;
+    }
+
+    #header #header-content .btn-primary-lg{
+        margin: 2rem;
+    }
+
+    #header:after{
+        background: rgba(0, 0, 0, 0.1);
+    } 
+
+}
